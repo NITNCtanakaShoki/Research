@@ -27,13 +27,14 @@ async function get(name: string): Promise<number> {
 }
 
 // await createUser("user1")
+// console.log(await get("user1"))
 // await createUser("user2")
 // await createUser("user3")
 // await createUser("user4")
 // await createUser("user5")
 //
-// // 1: -100, 2: 100, 3: 0, 4: 0, 5: 0
-await send("user1", "user2", 100)
+// // // 1: -100, 2: 100, 3: 0, 4: 0, 5: 0
+// await send("user1", "user2", 100)
 // 1: -100, 2: 0, 3: 100, 4: 0, 5: 0
 await send("user2", "user3", 100)
 // 1: -100, 2: 0, 3: -100, 4: 200, 5: 0
